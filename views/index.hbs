@@ -1,0 +1,14 @@
+<div style="text-align: center;">
+<h1>Availity LISP Code Challenge</h1>
+<br/>
+<h1 style="color: red; font-weight: bold;">{{notification}}</h1>
+{{#if trueOrFalse}}
+<h1 style="color: green; font-weight: bold;">{{trueOrFalse}}</h1>
+{{else}}
+<h1 style="color: red; font-weight: bold;">{{trueOrFalse}}</h1>
+{{/if}}
+<form action="/checker" method="POST">
+    <input type="text" name="lisp-code"/>
+    <input type="submit" value="Submit" />
+</form>
+</div>
